@@ -1,0 +1,26 @@
+package inicio;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner (System.in);
+		
+		String nome;
+		int idade= 20;
+		double nota= 10;
+		
+		
+	  System.out.println("Iniciando sistema..."); 
+	  System.out.println("Digite seu nome: ");
+	  nome = leia.nextLine();
+	  
+	  
+	  System.out.println("NOME: "+nome );
+	  System.out.println("IDADE: "+idade);
+	  System.out.println("NOTA: "+nota );
+	  
+	  }
+}
