@@ -1,0 +1,29 @@
+package questão9;
+
+import java.util.Scanner;
+
+public class Question9 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+	double salario;
+	double prest;
+	
+	System.out.println("Valor do salário: " );
+			salario=entrada.nextDouble();
+	System.out.println("Valor da prestação: " );
+			prest=entrada.nextDouble();
+			
+			if(0.2 * salario < prest) {
+				System.out.println("Emprestimo não concedido");
+				
+			}else {
+				System.out.println("Emprestimo concedido");
+			}
+		
+		
+
+	}
+
+}
