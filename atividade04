@@ -1,0 +1,34 @@
+package questão11;
+
+import java.util.Scanner;
+
+/** 
+ *  Leia uma velocidade em m/s (metros por segundo) e apresente-a convertida em km/h
+(quilometros por hora). A f ˆ ormula de convers  ́ ao ̃ e:  ́ K = M ∗ 3.6, sendo K a velocidade
+em km/h e M em m/s.
+ */
+
+
+public class principal {
+ void kmparametros(double n)
+{
+	double resposta=n/3.6; 
+	//não sabioa mais o que fazer ate perceber que um dos meus erros era a virgula no lugar do ponto 
+	System.out.println( n + " km/h convertido é: " + resposta +  " m/s");
+}
+
+  public static void main (String[]args) 
+  {
+	  Scanner entrada = new Scanner(System.in);
+	  
+	   principal principal = new principal();
+	  
+	System.out.println("Informe um numero para converter de km/h para m/s: ");   
+	double numero1= entrada.nextDouble();
+	
+	
+	principal.kmparametros(numero1);
+	  entrada.close();
+	
+  }
+}
