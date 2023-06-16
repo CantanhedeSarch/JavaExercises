@@ -1,0 +1,24 @@
+package main;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	/**
+	 Faça um programa que leia um numero inteiro e o imprima
+	  
+	 */
+	public static void main(String[] args) {
+  Scanner entrada = new Scanner (System.in);
+  
+  int numero;
+  
+  System.out.println("Digite um numero: ");
+  numero = entrada.nextInt();
+  
+		  System.out.println("O valor digitado: "+ numero);
+  
+
+	}
+
+}
