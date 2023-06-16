@@ -1,0 +1,49 @@
+package projetoquestao;
+
+import java.util.Scanner;
+
+public class questão1 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner (System.in);
+	 
+		
+		
+	
+		double produto= 30.00;
+		String estadoDigitado ;
+		
+		
+	
+		System.out.println(" Qual seu Estado (digite a sigla):  ");	
+		estadoDigitado=entrada.next();
+		  double MG = produto +(produto * 0.07) ;
+		  
+		System.out.println("O valor do produto é: R$" + MG);	
+		
+
+		System.out.println(" Qual seu Estado (digite a sigla):  ");	
+		estadoDigitado=entrada.next();
+		  double SP = produto +(produto * 0.12) ;
+		  
+		System.out.println("O valor do produto é: R$" + SP);	
+		
+		System.out.println(" Qual seu Estado (digite a sigla):  ");	
+		estadoDigitado=entrada.next();
+		  double RJ = produto +(produto * 0.15) ;
+		  
+		System.out.println("O valor do produto é: R$" + RJ);	
+		
+		
+		System.out.println(" Qual seu Estado (digite a sigla):  ");	
+		estadoDigitado=entrada.next();
+		  double MS = produto +(produto * 0.08) ;
+		  
+		System.out.println("O valor do produto é: R$" + MS);	
+		
+		
+
+		
+	}
+
+}
