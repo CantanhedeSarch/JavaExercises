@@ -1,0 +1,34 @@
+package questão;
+
+import java.util.Scanner;
+
+public class Question20 {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada= new Scanner(System.in);
+		 
+		
+		System.out.println("Digite os valores");
+		
+			double ladoa;
+			double ladob;
+			double ladoc;
+		
+		ladoa = entrada.nextDouble();
+		ladob =entrada.nextDouble();
+		ladoc = entrada.nextDouble();
+		
+		
+		if(ladoa > ladob + ladoc || ladob> ladoa+ladoc || ladoc> ladob + ladoa) {
+			System.out.println("Os valores sugeridos não formam um triangulo");
+		} else if ( ladoa==ladob && ladob==ladoc && ladoa==ladoc) {
+			System.out.println("Triangulo equilatero");
+		}else if(ladoa == ladob && ladob != ladoc && ladoa != ladoc) {
+			System.out.println("Os valores sugeridos formam um triangulo isóceles");
+		}else {
+			System.out.println("Os valores sugeridos formam um triangulo escaleno");
+		}
+	}
+
+}
