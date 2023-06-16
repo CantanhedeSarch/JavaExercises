@@ -1,0 +1,31 @@
+package projetoquestao;
+
+import java.util.Scanner;
+
+public class questao2 {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		 
+		 
+		System.out.println("Digite um numero: ");
+		 double numeroDigitado; 
+			
+		 numeroDigitado=entrada.nextDouble();
+	
+		while ( numeroDigitado > 0 )
+			  { double soma = numeroDigitado + numeroDigitado;		 
+			  double raiz= Math.sqrt(numeroDigitado);
+			System.out.println("Quadrado" +soma);
+			System.out.println("raiz" +raiz);
+			System.out.println("Digite outro numero");
+			numeroDigitado=entrada.nextDouble();
+			
+			continue;}
+
+	}
+
+
+}
