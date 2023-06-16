@@ -1,0 +1,38 @@
+package questão;
+
+import java.util.Scanner;
+
+public class Question41 {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada= new Scanner(System.in);
+		
+	System.out.println("Digite o peso em (kg): ");
+		double peso = entrada.nextDouble();
+		
+	System.out.println("Digite a altura em (m): ");
+		double altura = entrada.nextDouble();		
+		 
+		double imc = peso / (altura*altura);
+		
+		String classificacao;
+		
+		 if(imc<18.5) {
+			 classificacao = "Abaixo do peso";
+		 }else if(imc <= 24.9) {
+			 classificacao = "Saudável";
+		 }else if(imc <= 29.9) {
+			 classificacao = "Peso em excesso";
+	     }else if(imc <= 34.9) {
+			 classificacao = "Obesidade grau I";
+	     }else if(imc <=39.9) {
+	    	 classificacao = "Obesidade grau II";
+	     }else {
+	    	 classificacao = "obesidade grau III";
+	     }
+		 
+		 System.out.println("IMC: "+imc);
+		 System.out.println("classificação: " +classificacao);
+	}
+}
