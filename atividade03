@@ -1,0 +1,41 @@
+package questão43;
+
+import java.util.Scanner;
+
+/**
+  Escreva um programa de ajuda para vendedores. A partir de um valor total lido, mostre:
+• o total a pagar com desconto de 10%;
+• o valor de cada parcela, no parcelamento de 3× sem juros;
+• a comissao do vendedor, no caso da venda ser a vista (5% sobre o valor com des-  ̃
+conto)
+• a comissao do vendedor, no caso da venda ser parcelada (5% sobre o valor total)  ̃
+ */
+
+public class principal {
+ 
+   public static void main(String[]args) {
+	   Scanner entrada = new Scanner(System.in);
+ 
+	     System.out.println("Digite o valor do produto: ");
+	     		double preço = entrada.nextDouble();
+	     		
+	     System.out.println("O valor do produto com desconto é de: ");
+		        double desc = preço-(preço * 0.10);
+		     		System.out.println(desc);
+		     		
+		 System.out.println("O valor do produto parcelado em 3x é de: ");
+		         double parcelado = preço / 3;
+		     	    System.out.println(parcelado);    		
+		     	    
+		 System.out.println("O valor do produto com desconto e a comissão é de: ");
+		         double cvendedor= desc + (desc * 0.05);
+		     		System.out.println(cvendedor);
+		  
+		 System.out.println("O valor do produto e a comissão é de: ");
+			     double  pecvendedor= preço +( preço * 0.05);
+			     	System.out.println(pecvendedor);	 
+		     		
+		     		
+   }
+	
+}
